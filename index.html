@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number guessing game</title>
+    <style>
+        h1{text-align: center; font-size: 4rem;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+        p{text-align: center; font-size: 2rem;font-family:'Times New Roman', Times, serif;}
+        #inpu{display: flex; justify-content: center;}
+        body{background-image: linear-gradient(to right, rgb(136, 199, 233),rgb(169, 248, 169));}
+        @media (max-width: 768px) {
+            h1{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 2rem;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 1199px){
+            h1{
+                font-size: 2.5rem;
+            }
+            p{
+                font-size: 2.5rem;
+            }
+        }
+        @media (min-width: 1200px){
+            h1{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Number guessing game</h1><br>
+    <p>Quick note: Refresh site to play again :D</p><br>
+    <p>Select a Number between 1 ~ 10 please</p><br>
+    <div id="inpu">
+      <input id="guessingNum">
+      <input type="submit" id="submitbut">
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
